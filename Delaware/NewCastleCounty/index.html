@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" id="redux-google-fonts-salient_redux-css" href="https://fonts.googleapis.com/css?family=Poppins%3A600%2C400%7CMontserrat%3A800%2C900%2C700&amp;ver=1597678827" type="text/css" media="all">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A600%2C400%7CMontserrat%3A800%2C900%2C700&#038;ver=1597678827' type='text/css' media='all' />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="Dis911.png" alt="Dispatch Logo" />
+            </a>
+        </div>
+        <ul class="header-top-menu">
+            <li><a href="#">Medical</a></li>
+            <li><a href="#">Fire</a></li>
+            <li><a href="#">Police</a></li>
+        </ul>
+        <div class="header-cta">
+            <a class="sign-up-button" href="#">Sign Up</a>
+        </div>
+    </header>
+     <div class="customerInfo">
+         <h2>Submit Your Information</h2>
+
+  
+
+  
+  <form action="http://127.0.0.1:5501/submit" method="POST"> 
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="locationIncident">Location of Incident:</label>
+    <input type="text" id="locationIncident" name="locationIncident">
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" maxlength="14" oninput="formatPhoneNumber(this)">
+<script>
+    function formatPhoneNumber(input) {
+        // Get the value and remove all non-numeric characters
+        let phoneNumber = input.value.replace(/\D/g, '');
+
+        // Format phone number as (xxx) xxx-xxxx
+        if (phoneNumber.length <= 3) {
+            input.value = '(' + phoneNumber;
+        } else if (phoneNumber.length <= 6) {
+            input.value = '(' + phoneNumber.substring(0, 3) + ') ' + phoneNumber.substring(3);
+        } else {
+            input.value = '(' + phoneNumber.substring(0, 3) + ') ' + phoneNumber.substring(3, 6) + '-' + phoneNumber.substring(6, 10);
+        }
+    }
+</script>
+
+ 
+    <label for="information">Additional Information:</label>
+    <textarea id="information" name="information"></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 cdbluejr
+    </footer>
+</body>
+</html>
