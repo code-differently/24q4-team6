@@ -9,7 +9,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     position: fixed;
     padding: 16px 52px;
     background-color: white;
@@ -18,7 +18,7 @@
     z-index: 10;
 }
 .header-top-menu a {
-    color: #444;
+    color: #345;
     text-decoration: none;
     font-family: 'Poppins';
     font-weight: bold;
@@ -27,12 +27,12 @@
     position: absolute; /* Fixes the logo in place when scrolling */
     top: 15px;
     left: 5px;
-    background-color: black;
+    background-color: lightblue;
     
 
 }
 .header-cta .sign-up-button {
-    background-color: rgb(255, 128, 0);
+    background-color: rgb(128, 255, 0);
     color: white;
     padding: 8px 16px;
     border-radius: 4px;
@@ -41,32 +41,39 @@
     font-family: 'Poppins';
 }
 img {
-    width: 200px;
+    width: 50px;
     height: auto;
 }
 .header-top-menu {
     list-style: none;
     height: 75px;
-    background-color: black;
+    background-color: lightblue;
     padding: 0;
     margin: 0 auto; /* Centers the menu horizontally */
     width: 100% auto; /* Makes the width based on the content */
     display: flex; /* Align items horizontally */
-    margin-left: 250px;
+    margin-left: 25px;
 
 
 }
 .header-top-menu li {
             margin-top: 5px;
-            margin-left: 50px;
-            width: 25px;
-            text-align: center;
-            font-size: 22;
+            margin-left: 10px;
+            width: 100%;
+            padding-left: 10px;
+            text-align: left;
+            font-size: 50;
             font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
             
         }
+li:nth-child(2) {
+        padding-left: 150px;
+}
+li:nth-child(3) {
+        padding-left: 150px;
+}
 .header-cta {
-    margin-left: 300px;
+    margin-left: 100px;
     font-size: 22;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
             
@@ -81,9 +88,9 @@ sign-up-botton {
 
 
 }
-.hero-section {
+.customerInfo {
 padding:100px 20px;
-padding-top: 5%;
+padding-top: 8%;
 background-image: url('hero.jpg'); /* Path to the image */
 background-size: cover; /* Makes sure the image covers the full width and height */
 background-attachment: fixed;

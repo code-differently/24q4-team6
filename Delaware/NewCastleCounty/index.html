@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" id="redux-google-fonts-salient_redux-css" href="https://fonts.googleapis.com/css?family=Poppins%3A600%2C400%7CMontserrat%3A800%2C900%2C700&amp;ver=1597678827" type="text/css" media="all">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A600%2C400%7CMontserrat%3A800%2C900%2C700&#038;ver=1597678827' type='text/css' media='all' />
-    <link rel="stylesheet" type="text/css" href=*/NewCastleCounty/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -22,20 +22,20 @@
             <a class="sign-up-button" href="#">Sign Up</a>
         </div>
     </header>
-     <div class="CustomerInfo">
+     <div class="customerInfo">
          <h2>Submit Your Information</h2>
 
   
 
   
-  <form action="http://127.0.0.1:5502/submit" method="POST"> 
+  <form action="http://127.0.0.1:5501/submit" method="POST"> 
     <label for="fullName">Full Name:</label>
     <input type="text" id="fullName" name="fullName" required>
 
     <label for="locationIncident">Location of Incident:</label>
     <input type="text" id="locationIncident" name="locationIncident">
 
-    <label for="locationIncident">Phone Number:</label>
+    <label for="phoneNumber">Phone Number:</label>
     <input type="tel" id="phone" name="phone" placeholder="Enter phone number" maxlength="14" oninput="formatPhoneNumber(this)">
 <script>
     function formatPhoneNumber(input) {
